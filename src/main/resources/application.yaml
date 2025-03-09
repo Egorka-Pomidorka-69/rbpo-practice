@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: EgorBandit
+  datasource:
+    url: jdbc:postgresql://localhost:5432/antivirus
+    username: ${JDBC_USERNAME}
+    password: ${JDBC_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+jwt:
+  secret: ${SECRET_KEY}
+  expiration: 3600000
